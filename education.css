@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+    border : none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+     
+
+:root{
+    --bg-color:#1f242d; 
+   --second-bg-color: #323946; 
+   --text-color: #fff;
+   --main-color:#0ef;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    cursor:default;
+    animation:slideRight 1s ease forwards;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight:500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+section{
+    margin-top: 100px;
+}
+
+#education {
+    padding: 20px;
+    margin-top: 90px;
+    color: var(--text-color);
+    
+}
+
+#education h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    color:var(--main-color);
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--second-bg-color);
+    border-radius: 5px;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.education-item ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.education-item li {
+    margin-bottom: 5px;
+}
+
+.education-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+

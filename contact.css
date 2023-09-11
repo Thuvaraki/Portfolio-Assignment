@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+    border : none;
+    font-family: 'Poppins', sans-serif;
+}
+     
+
+:root{
+   --bg-color:#1f242d; 
+   --second-bg-color: #323946; 
+   --text-color: #fff;
+   --main-color:#0ef;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    cursor:default;
+    animation:slideRight 1s ease forwards;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight:500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+section{
+    max-width: 800px;
+    margin: 120px auto 20px;
+    background-color: var(--text-color);
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
